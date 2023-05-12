@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef&family=Cairo&family=Inter&family=MuseoModerno&family=Open+Sans:ital@1&family=Oswald&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*header*/
+
+header {
+    background-color: #333333;
+    height: 70px;
+    width: 100%;
+}
+
+header h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px;
+}
+
+.logo {
+    float: left;
+}
+
+.menu-list {
+    text-align: end;
+}
+
+header .menu .menu-list .menu-list-item {
+    display: inline-block;
+    padding: 23px 15px;
+}
+
+header .menu .menu-list .menu-list-item a {
+    padding: 20px;
+    margin: -10px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+header .menu .menu-list .menu-list-item a:hover {
+    background-color: #444444;
+}
+
+ /*------------start index-----------*/
+/* start 1st section*/
+.hero {
+    background-image: url(images/cafe\ .png);
+    opacity: 0.8;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+main .hero .hero-content {
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    max-width: 500px;
+    height: 500px;
+}
+
+.hero-title {
+    padding: 100px 35px 50px;
+    font-size: 2.8em;
+}
+
+.separateur {
+    width: 100px;
+    height: 10px;
+    background-color: #0a0a0a;
+    margin: auto;
+}
+
+.hero-text{
+    line-height: 1.7em;
+    font-size: 1.2em;
+    font-weight:bold;
+    margin-top: 20px;
+    padding: 10px 40px;
+}
+.hero .hero-btn{
+    padding: 13px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.hero .hero-btn:hover {
+    color: #fff;
+    background-color: black;
+}
+
+/* start 2nd section*/
+
+.info .info-content{
+    background-color: #ffffff;
+    margin: auto;
+    width: 800px;
+    padding: 100px 0;
+}
+    
+.info-cup, .info-clock{
+    display: inline-block;
+    width: 350px;
+    text-align: center;
+}
+
+i{
+    font-size: 2em;
+}
+.info-content h3{
+    font-size: 1.5em ;
+ }
+
+ /* start 3rd sec*/
+.img-back{
+ background-image:url(images/aucafé.png);
+ height: 600px;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+/* start 4rt sec*/
+
+.reserver{
+    height: 450px;
+    text-align: center;
+} 
+
+.reserver p {
+    padding: 50px 300px;
+    font-size: 1.2em;
+}
+
+.reserver-title {
+    font-size: 2.5em;
+    padding-top: 100px;
+}
+
+.reserver button {
+    background-color: black;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.reserver button:hover {
+    background-color: #dcd7d7;
+    color: black;
+}
+/*------------end index-----------*/
+
+/*------------start Noustrouver----------*/
+.map {
+    width: 800px;
+    margin: 150px auto;
+}
+
+.map .map-link, .map .map-adresse {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.map .map-link {
+    margin-right: 50px;
+    border: 1px solid #cbc8c8;
+    border-radius: 4px;
+}
+
+.map .map-adresse h3 {
+    border-bottom: 0.6px solid #000;
+    font-size: 1.6em;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.map .map_adresse p {
+    font-weight: bold;
+}
+
+span {
+    color: #fff;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.pink {
+    background-color: #BE418C;
+}
+
+.brown {
+    background-color: #8C5E24;
+}
+/* ----------end Noustrouver-------- */
+
+/* ------start contact------- */
+
+.contact {
+    padding: 100px 0;
+}
+
+.contact-content {
+    width: 500px;
+    margin: auto;
+}
+
+.contact-content form input {
+    padding:7px 5px;
+    width: 100%;
+    display: block;
+}
+
+.contact-content form label {
+    display: block;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.contact-content form textarea {
+    display: block;
+    padding: 7px 5px;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.contact-content h1 {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+
+}
+
+.contact-content form .btn {
+    color: #fff;
+    background-color: #000;
+    padding: 13px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 40px;
+    cursor: pointer;
+    border: none;
+} 
+
+.contact-content form .btn:hover {
+    color: #000;
+    background-color: #cdc8c8;
+}
+/*---------------end contact--------*/
+
+/*--------footer-------*/
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    height: 60px;
+    padding-top: 20px;
+}
+
+
