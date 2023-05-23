@@ -13,6 +13,16 @@ header {
     background-color: #333333;
     height: 70px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu button {
+    font-size: 1.5em;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    display: none;
 }
 
 header h2 {
@@ -21,17 +31,17 @@ header h2 {
     color: #fff;
     padding: 20px;
 }
-
+/* 
 .logo {
     float: left;
 }
 
 .menu-list {
     text-align: end;
-}
+} */
 
 header .menu .menu-list .menu-list-item {
-    display: inline-block;
+     display: inline-block; 
     padding: 23px 15px;
 }
 
@@ -104,12 +114,14 @@ main .hero .hero-content {
 .info .info-content{
     background-color: #ffffff;
     margin: auto;
-    width: 800px;
+    width: 100%;
     padding: 100px 0;
+    display: flex;
+    justify-content: space-around;
 }
     
 .info-cup, .info-clock{
-    display: inline-block;
+    /* display: inline-block; */
     width: 350px;
     text-align: center;
 }
@@ -268,5 +280,28 @@ footer {
     height: 60px;
     padding-top: 20px;
 }
+@media screen and (max-width:800px) { 
+  header{
+    position: relative;
+  }
+  .menu button{
+    display: block;
+  }
+    .menu .menu-list{
+    display: none;
+  } 
+  .menu button:hover + .menu-list{
+    display: block;
+    position: absolute;
+    background-color: #333333;
+     /* left:0; */
+    right: 0; 
+    z-index: 1;
+  } 
+  .menu button:hover + .menu-list .menu-list-item{
+    display: block;
+    text-align: right;
+  }
 
+}
 
